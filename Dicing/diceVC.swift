@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class diceVC: UIViewController {
     
@@ -17,8 +18,10 @@ class diceVC: UIViewController {
     
     var randomDiceIndex1: Int = 0
     var randomDiceIndex2: Int = 0
-
+    
     let diceArry = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
+    
+    var audioPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +31,9 @@ class diceVC: UIViewController {
     }
     
     @IBAction func rollPressed(_ sender: UIButton) {
-        updateDiceImages()
         
+        playAudio()
+        delay()
     }
     
     func updateDiceImages() {
@@ -43,7 +47,26 @@ class diceVC: UIViewController {
     }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        updateDiceImages()
+        playAudio()
+        delay()
+    }
+    
+    func playAudio() {
+        
+        let soundUrl = Bundle.main.url(forResource: "move", withExtension: "wav")
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundUrl!)
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+        audioPlayer.play()
+    }
+    func delay() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: {
+            self.updateDiceImages()
+        })
     }
 }
 

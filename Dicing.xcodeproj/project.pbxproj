@@ -12,6 +12,7 @@
 		01CA5A7B1FB0700B00050E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CA5A791FB0700B00050E06 /* Main.storyboard */; };
 		01CA5A7D1FB0700B00050E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CA5A7C1FB0700B00050E06 /* Assets.xcassets */; };
 		01CA5A801FB0700B00050E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CA5A7E1FB0700B00050E06 /* LaunchScreen.storyboard */; };
+		01CA5A8D1FB0CB9700050E06 /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = 01CA5A8C1FB0CB9700050E06 /* move.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		01CA5A7C1FB0700B00050E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01CA5A7F1FB0700B00050E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01CA5A811FB0700B00050E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01CA5A8C1FB0CB9700050E06 /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		01CA5A741FB0700B00050E06 /* Dicing */ = {
 			isa = PBXGroup;
 			children = (
+				01CA5A8B1FB0CB7500050E06 /* Sounds */,
 				01CA5A8A1FB0862100050E06 /* Data */,
 				01CA5A891FB085FC00050E06 /* Model */,
 				01CA5A881FB085F800050E06 /* View */,
@@ -94,6 +97,14 @@
 			children = (
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		01CA5A8B1FB0CB7500050E06 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				01CA5A8C1FB0CB9700050E06 /* move.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 				01CA5A801FB0700B00050E06 /* LaunchScreen.storyboard in Resources */,
 				01CA5A7D1FB0700B00050E06 /* Assets.xcassets in Resources */,
 				01CA5A7B1FB0700B00050E06 /* Main.storyboard in Resources */,
+				01CA5A8D1FB0CB9700050E06 /* move.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QUF74GRPF3;
 				INFOPLIST_FILE = Dicing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.warcom.Dicing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -324,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QUF74GRPF3;
 				INFOPLIST_FILE = Dicing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.warcom.Dicing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
