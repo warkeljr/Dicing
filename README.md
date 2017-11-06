@@ -9,11 +9,11 @@ Finished the App.
 
 Used Swift 4 / Xcode 9
 
+## Finished App - App
+![Finished App](https://github.com/warkeljr/Dicing/blob/LaunchScreen/DicingLaunchScreen.png)
+
 ## Finished App - LaunchScreen
 ![Finished App](https://github.com/warkeljr/Dicing/blob/LaunchScreen/DicingApp.png)
-
-## Finished App - App
-![Finished App](https://github.com/warkeljr/I-Am-Poor-iOS11-master/blob/Nav-setup/PoorVC.png)
 
 # Author
 
